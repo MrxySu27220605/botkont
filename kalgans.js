@@ -171,7 +171,7 @@ let list = []
 for (let i of kon) {
 list.push({
 displayName: await haikal.getName(i + '@s.whatsapp.net'),
-vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await haikal.getName(i + '@s.whatsapp.net')}\nFN:${await haikal.getName(i + '@s.whatsapp.net')}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Ponsel\nitem2.EMAIL;type=INTERNET:Cxza935@gmail.com\nitem2.X-ABLabel:Email\nitem3.URL:https://https://www.instagram.com/Cxza935/?hl=id\nitem3.X-ABLabel:Instagram\nitem4.ADR:;;Indonesia;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`})}
+vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await haikal.getName(i + '@s.whatsapp.net')}\nFN:${await haikal.getName(i + '@s.whatsapp.net')}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Ponsel\nitem2.EMAIL;type=INTERNET:Cxza-935@gmail.com\nitem2.X-ABLabel:Email\nitem3.URL:https://https://www.instagram.com/Cxza-935/?hl=id\nitem3.X-ABLabel:Instagram\nitem4.ADR:;;Indonesia;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`})}
 //=================================================//
 haikal.sendMessage(jid, { contacts: { displayName: `${list.length} Kontak`, contacts: list }, ...opts }, { quoted })}
 //=================================================//
